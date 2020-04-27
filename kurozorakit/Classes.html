@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">KurozoraKit 0.4.2 Docs</a> (100% documented)</p>
+        <p><a href="index.html">KurozoraKit 0.5.0 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/Kurozora/KurozoraKit"><img src="img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fdeveloper%2Ekurozora%2Eapp%2Fkurozorakit%2Fdocsets%2FKurozoraKit%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -33,10 +33,10 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/Actors.html">Actors</a>
+                <a href="Classes/ActorElement.html">ActorElement</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ActorsElement.html">ActorsElement</a>
+                <a href="Classes/Actors.html">Actors</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/BadgeElement.html">BadgeElement</a>
@@ -45,16 +45,16 @@
                 <a href="Classes/CurrentUser.html">CurrentUser</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/EpisodeElement.html">EpisodeElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EpisodeSeason.html">EpisodeSeason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EpisodeUserDetails.html">EpisodeUserDetails</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/Episodes.html">Episodes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/EpisodesElement.html">EpisodesElement</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/EpisodesSeason.html">EpisodesSeason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/EpisodesUserDetails.html">EpisodesUserDetails</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/Explore.html">Explore</a>
@@ -72,16 +72,16 @@
                 <a href="Classes/FeedPosts.html">FeedPosts</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/FeedSectionElement.html">FeedSectionElement</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/FeedSections.html">FeedSections</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/FeedSectionsElement.html">FeedSectionsElement</a>
+                <a href="Classes/ForumsSectionElement.html">ForumsSectionElement</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ForumsSections.html">ForumsSections</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ForumsSectionsElement.html">ForumsSectionsElement</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ForumsThread.html">ForumsThread</a>
@@ -129,10 +129,10 @@
                 <a href="Classes/Search.html">Search</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Seasons.html">Seasons</a>
+                <a href="Classes/SeasonElement.html">SeasonElement</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SeasonsElement.html">SeasonsElement</a>
+                <a href="Classes/Seasons.html">Seasons</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ShowDetails.html">ShowDetails</a>
@@ -141,10 +141,10 @@
                 <a href="Classes/ShowDetailsElement.html">ShowDetailsElement</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Themes.html">Themes</a>
+                <a href="Classes/ThemeElement.html">ThemeElement</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ThemesElement.html">ThemesElement</a>
+                <a href="Classes/Themes.html">Themes</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ThreadPost.html">ThreadPost</a>
@@ -171,7 +171,7 @@
                 <a href="Classes/UserNotificationData.html">UserNotificationData</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/UserNotificationsElement.html">UserNotificationsElement</a>
+                <a href="Classes/UserNotificationElement.html">UserNotificationElement</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/UserProfile.html">UserProfile</a>
@@ -257,7 +257,7 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/KurozoraKitEndpoints.html">KurozoraKitEndpoints</a>
+                <a href="Structs/KKEndpoints.html">KKEndpoints</a>
               </li>
             </ul>
           </li>
@@ -306,7 +306,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/KurozoraKit.swift#L20-L100">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/KurozoraKit.swift#L20-L96">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -352,223 +352,6 @@ For further control over the information saved in <code>Keychain</code>, you can
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11KurozoraKit12BadgeElementC"></a>
-                    <a name="//apple_ref/swift/Class/BadgeElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit12BadgeElementC">BadgeElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single badge, such as the badge&rsquo;s name, description, and text color.</p>
-
-                        <a href="Classes/BadgeElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BadgeElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/BadgeElement.swift#L15-L40">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit6ActorsC"></a>
-                    <a name="//apple_ref/swift/Class/Actors" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit6ActorsC">Actors</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of actors, such as the total actor count, and a collection of actors.</p>
-
-                        <a href="Classes/Actors.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Actors</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Cast.swift#L15-L37">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit13ActorsElementC"></a>
-                    <a name="//apple_ref/swift/Class/ActorsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit13ActorsElementC">ActorsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single actor, such as the actor&rsquo;s name, role, and image.</p>
-
-                        <a href="Classes/ActorsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ActorsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Cast.swift#L42-L59">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit8EpisodesC"></a>
-                    <a name="//apple_ref/swift/Class/Episodes" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit8EpisodesC">Episodes</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of episodes, such as the episodes&rsquo; season.</p>
-
-                        <a href="Classes/Episodes.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Episodes</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Episodes.swift#L15-L37">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit15EpisodesElementC"></a>
-                    <a name="//apple_ref/swift/Class/EpisodesElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit15EpisodesElementC">EpisodesElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single episode, such as the episodes&rsquo;s number, name, and air date.</p>
-
-                        <a href="Classes/EpisodesElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodesElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Episodes.swift#L42-L79">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit19EpisodesUserDetailsC"></a>
-                    <a name="//apple_ref/swift/Class/EpisodesUserDetails" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit19EpisodesUserDetailsC">EpisodesUserDetails</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single user&rsquo;s details, such as the watch status of the episode.</p>
-
-                        <a href="Classes/EpisodesUserDetails.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodesUserDetails</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Episodes.swift#L84-L93">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit14EpisodesSeasonC"></a>
-                    <a name="//apple_ref/swift/Class/EpisodesSeason" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit14EpisodesSeasonC">EpisodesSeason</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about an episode&rsquo;s season, such as the season&rsquo;s title, and episode count.</p>
-
-                        <a href="Classes/EpisodesSeason.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodesSeason</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Episodes.swift#L98-L119">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:11KurozoraKit7ExploreC"></a>
                     <a name="//apple_ref/swift/Class/Explore" class="dashAnchor"></a>
                     <a class="token" href="#/s:11KurozoraKit7ExploreC">Explore</a>
@@ -592,7 +375,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Explore.swift#L15-L31">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Explore/Explore.swift#L15-L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -623,69 +406,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Explore.swift#L36-L73">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit12FavoriteShowC"></a>
-                    <a name="//apple_ref/swift/Class/FavoriteShow" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit12FavoriteShowC">FavoriteShow</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a show&rsquo;s favorite status.</p>
-
-                        <a href="Classes/FavoriteShow.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FavoriteShow</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/FavoriteShow.swift#L15-L24">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit9FeedPostsC"></a>
-                    <a name="//apple_ref/swift/Class/FeedPosts" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit9FeedPostsC">FeedPosts</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of feed posts, such as the feed&rsquo;s total pages count.</p>
-
-                        <a href="Classes/FeedPosts.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FeedPosts</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/FeedPosts.swift#L15-L41">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Explore/ExploreCategory.swift#L14-L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -716,7 +437,69 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/FeedPosts.swift#L46-L87">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Feed/FeedPostElement.swift#L14-L55">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit9FeedPostsC"></a>
+                    <a name="//apple_ref/swift/Class/FeedPosts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit9FeedPostsC">FeedPosts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of feed posts, such as the feed&rsquo;s total pages count.</p>
+
+                        <a href="Classes/FeedPosts.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FeedPosts</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Feed/FeedPosts.swift#L15-L41">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit18FeedSectionElementC"></a>
+                    <a name="//apple_ref/swift/Class/FeedSectionElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit18FeedSectionElementC">FeedSectionElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single feed section, such as the section&rsquo;s name, and lock status.</p>
+
+                        <a href="Classes/FeedSectionElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FeedSectionElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Feed/FeedSectionElement.swift#L14-L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -747,7 +530,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/FeedSections.swift#L15-L32">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Feed/FeedSections.swift#L15-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -755,9 +538,9 @@ For further control over the information saved in <code>Keychain</code>, you can
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11KurozoraKit19FeedSectionsElementC"></a>
-                    <a name="//apple_ref/swift/Class/FeedSectionsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit19FeedSectionsElementC">FeedSectionsElement</a>
+                    <a name="/s:11KurozoraKit20ForumsSectionElementC"></a>
+                    <a name="//apple_ref/swift/Class/ForumsSectionElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit20ForumsSectionElementC">ForumsSectionElement</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -765,20 +548,20 @@ For further control over the information saved in <code>Keychain</code>, you can
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A mutable object that stores information about a single feed section, such as the section&rsquo;s name, and lock status.</p>
+                        <p>A mutable object that stores information about a single feed section, such as the sections&rsquo;s name, and lock status.</p>
 
-                        <a href="Classes/FeedSectionsElement.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ForumsSectionElement.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FeedSectionsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ForumsSectionElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/FeedSections.swift#L37-L54">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Forums/ForumsSectionElement.swift#L14-L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -809,38 +592,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ForumsSections.swift#L15-L32">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit21ForumsSectionsElementC"></a>
-                    <a name="//apple_ref/swift/Class/ForumsSectionsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit21ForumsSectionsElementC">ForumsSectionsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single feed section, such as the sections&rsquo;s name, and lock status.</p>
-
-                        <a href="Classes/ForumsSectionsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ForumsSectionsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ForumsSections.swift#L37-L54">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Forums/ForumsSections.swift#L15-L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -871,7 +623,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ForumsThread.swift#L15-L52">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Forums/ForumsThread.swift#L15-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -902,69 +654,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ForumsThread.swift#L57-L116">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit6GenresC"></a>
-                    <a name="//apple_ref/swift/Class/Genres" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit6GenresC">Genres</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of genres.</p>
-
-                        <a href="Classes/Genres.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Genres</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Genres.swift#L15-L31">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit12GenreElementC"></a>
-                    <a name="//apple_ref/swift/Class/GenreElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit12GenreElementC">GenreElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single genre, such as the genre&rsquo;s name, color, and symbol.</p>
-
-                        <a href="Classes/GenreElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GenreElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Genres.swift#L36-L61">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Forums/ForumsThreadElement.swift#L14-L73">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -995,7 +685,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/KKError.swift#L15-L51">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/KKError.swift#L15-L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1026,7 +716,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/KKSuccess.swift#L15-L24">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/KKSuccess.swift#L15-L24">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1057,7 +747,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/MALImport.swift#L15-L24">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/MALImport.swift#L15-L24">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1088,7 +778,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/PrivacyPolicy.swift#L15-L24">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/Privacy Policy/PrivacyPolicy.swift#L15-L24">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1119,7 +809,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/PrivacyPolicy.swift#L29-L42">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/Privacy Policy/PrivacyPolicyElement.swift#L14-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1150,565 +840,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Search.swift#L15-L55">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit7SeasonsC"></a>
-                    <a name="//apple_ref/swift/Class/Seasons" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit7SeasonsC">Seasons</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of seasons.</p>
-
-                        <a href="Classes/Seasons.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Seasons</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Seasons.swift#L15-L32">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit14SeasonsElementC"></a>
-                    <a name="//apple_ref/swift/Class/SeasonsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit14SeasonsElementC">SeasonsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single season, such as the season&rsquo;s title, number, and episodes count.</p>
-
-                        <a href="Classes/SeasonsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeasonsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Seasons.swift#L37-L62">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit12UserSessionsC"></a>
-                    <a name="//apple_ref/swift/Class/UserSessions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit12UserSessionsC">UserSessions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of user sessions, such as the current session, and a collection of other sessions.</p>
-
-                        <a href="Classes/UserSessions.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserSessions</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session.swift#L15-L45">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit19UserSessionsElementC"></a>
-                    <a name="//apple_ref/swift/Class/UserSessionsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit19UserSessionsElementC">UserSessionsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single user session, such as the session&rsquo;s ip address, last validated date, and platform.</p>
-
-                        <a href="Classes/UserSessionsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserSessionsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session.swift#L50-L75">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit15LocationElementC"></a>
-                    <a name="//apple_ref/swift/Class/LocationElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit15LocationElementC">LocationElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single location, such as the location&rsquo;s region, latitude, and longitude.</p>
-
-                        <a href="Classes/LocationElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LocationElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session.swift#L80-L136">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit15PlatformElementC"></a>
-                    <a name="//apple_ref/swift/Class/PlatformElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit15PlatformElementC">PlatformElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single platform, such as the platform&rsquo;s system name, version, and device vendor.</p>
-
-                        <a href="Classes/PlatformElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PlatformElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session.swift#L141-L166">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit11ShowDetailsC"></a>
-                    <a name="//apple_ref/swift/Class/ShowDetails" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit11ShowDetailsC">ShowDetails</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of shows.</p>
-
-                        <a href="Classes/ShowDetails.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ShowDetails</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ShowDetails.swift#L15-L36">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit18ShowDetailsElementC"></a>
-                    <a name="//apple_ref/swift/Class/ShowDetailsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit18ShowDetailsElementC">ShowDetailsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single show, such as the show&rsquo;s title, episode count, and air date.</p>
-
-                        <a href="Classes/ShowDetailsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ShowDetailsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ShowDetails.swift#L41-L267">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit6ThemesC"></a>
-                    <a name="//apple_ref/swift/Class/Themes" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit6ThemesC">Themes</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of themes.</p>
-
-                        <a href="Classes/Themes.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Themes</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Themes.swift#L15-L33">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit13ThemesElementC"></a>
-                    <a name="//apple_ref/swift/Class/ThemesElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit13ThemesElementC">ThemesElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single theme, such as the theme&rsquo;s name, download count, and download link.</p>
-
-                        <a href="Classes/ThemesElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThemesElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Themes.swift#L38-L67">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit10ThreadPostC"></a>
-                    <a name="//apple_ref/swift/Class/ThreadPost" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit10ThreadPostC">ThreadPost</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single thread post.</p>
-
-                        <a href="Classes/ThreadPost.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadPost</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ThreadPost.swift#L16-L25">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit13ThreadRepliesC"></a>
-                    <a name="//apple_ref/swift/Class/ThreadReplies" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit13ThreadRepliesC">ThreadReplies</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of thread replies, such as the thread reply&rsquo;s current page, last page, and total pages count.</p>
-
-                        <a href="Classes/ThreadReplies.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadReplies</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ThreadReplies.swift#L15-L44">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit20ThreadRepliesElementC"></a>
-                    <a name="//apple_ref/swift/Class/ThreadRepliesElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit20ThreadRepliesElementC">ThreadRepliesElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single thread reply, such as the reply&rsquo;s content, and score.</p>
-
-                        <a href="Classes/ThreadRepliesElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadRepliesElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ThreadReplies.swift#L49-L74">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit11ThreadReplyC"></a>
-                    <a name="//apple_ref/swift/Class/ThreadReply" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit11ThreadReplyC">ThreadReply</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single thread reply.</p>
-
-                        <a href="Classes/ThreadReply.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadReply</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/ThreadReply.swift#L15-L24">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit4UserC"></a>
-                    <a name="//apple_ref/swift/Class/User" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit4UserC">User</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single user, such as the user&rsquo;s profile, and authentication token.</p>
-
-                        <a href="Classes/User.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">User</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User.swift#L17-L42">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit11CurrentUserC"></a>
-                    <a name="//apple_ref/swift/Class/CurrentUser" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit11CurrentUserC">CurrentUser</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about the current user, such as the current user&rsquo;s username, bio, and session.</p>
-
-                        <a href="Classes/CurrentUser.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CurrentUser</span> <span class="p">:</span> <span class="kt"><a href="Classes/UserProfile.html">UserProfile</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User.swift#L47-L58">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit11UserProfileC"></a>
-                    <a name="//apple_ref/swift/Class/UserProfile" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit11UserProfileC">UserProfile</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about the user profile, such as the user&rsquo;s username, bio, and session.</p>
-
-                        <a href="Classes/UserProfile.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserProfile</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User.swift#L63-L169">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit10UserFollowC"></a>
-                    <a name="//apple_ref/swift/Class/UserFollow" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit10UserFollowC">UserFollow</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a collection of follow lists, such as the follow list&rsquo;s current page number, and last page number.</p>
-
-                        <a href="Classes/UserFollow.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserFollow</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/UserFollow.swift#L15-L52">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Miscellaneous/Search.swift#L15-L55">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1739,38 +871,7 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/UserNotification.swift#L15-L36">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KurozoraKit24UserNotificationsElementC"></a>
-                    <a name="//apple_ref/swift/Class/UserNotificationsElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KurozoraKit24UserNotificationsElementC">UserNotificationsElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A mutable object that stores information about a single notification, such as the notification&rsquo;s type, read status, and containing data.</p>
-
-                        <a href="Classes/UserNotificationsElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserNotificationsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/UserNotification.swift#L41-L70">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Notification/UserNotification.swift#L15-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1801,7 +902,751 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/UserNotification.swift#L75-L103">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Notification/UserNotificationData.swift#L14-L42">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit23UserNotificationElementC"></a>
+                    <a name="//apple_ref/swift/Class/UserNotificationElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit23UserNotificationElementC">UserNotificationElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single notification, such as the notification&rsquo;s type, read status, and containing data.</p>
+
+                        <a href="Classes/UserNotificationElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserNotificationElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Notification/UserNotificationElement.swift#L14-L43">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit15LocationElementC"></a>
+                    <a name="//apple_ref/swift/Class/LocationElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit15LocationElementC">LocationElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single location, such as the location&rsquo;s region, latitude, and longitude.</p>
+
+                        <a href="Classes/LocationElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LocationElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session/LocationElement.swift#L14-L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit15PlatformElementC"></a>
+                    <a name="//apple_ref/swift/Class/PlatformElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit15PlatformElementC">PlatformElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single platform, such as the platform&rsquo;s system name, version, and device vendor.</p>
+
+                        <a href="Classes/PlatformElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PlatformElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session/PlatformElement.swift#L14-L39">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12UserSessionsC"></a>
+                    <a name="//apple_ref/swift/Class/UserSessions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12UserSessionsC">UserSessions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of user sessions, such as the current session, and a collection of other sessions.</p>
+
+                        <a href="Classes/UserSessions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserSessions</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session/Session.swift#L15-L45">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit19UserSessionsElementC"></a>
+                    <a name="//apple_ref/swift/Class/UserSessionsElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit19UserSessionsElementC">UserSessionsElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single user session, such as the session&rsquo;s ip address, last validated date, and platform.</p>
+
+                        <a href="Classes/UserSessionsElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserSessionsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Session/UserSessionsElement.swift#L14-L39">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12ActorElementC"></a>
+                    <a name="//apple_ref/swift/Class/ActorElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12ActorElementC">ActorElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single actor, such as the actor&rsquo;s name, role, and image.</p>
+
+                        <a href="Classes/ActorElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ActorElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Actors/ActorElement.swift#L14-L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit6ActorsC"></a>
+                    <a name="//apple_ref/swift/Class/Actors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit6ActorsC">Actors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of actors, such as the total actor count, and a collection of actors.</p>
+
+                        <a href="Classes/Actors.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Actors</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Actors/Actors.swift#L15-L37">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit14EpisodeElementC"></a>
+                    <a name="//apple_ref/swift/Class/EpisodeElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit14EpisodeElementC">EpisodeElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single episode, such as the episodes&rsquo;s number, name, and air date.</p>
+
+                        <a href="Classes/EpisodeElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodeElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Episodes/EpisodeElement.swift#L14-L51">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit13EpisodeSeasonC"></a>
+                    <a name="//apple_ref/swift/Class/EpisodeSeason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit13EpisodeSeasonC">EpisodeSeason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about an episode&rsquo;s season, such as the season&rsquo;s title, and episode count.</p>
+
+                        <a href="Classes/EpisodeSeason.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodeSeason</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Episodes/EpisodeSeason.swift#L14-L35">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit18EpisodeUserDetailsC"></a>
+                    <a name="//apple_ref/swift/Class/EpisodeUserDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit18EpisodeUserDetailsC">EpisodeUserDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single user&rsquo;s details, such as the watch status of the episode.</p>
+
+                        <a href="Classes/EpisodeUserDetails.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">EpisodeUserDetails</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Episodes/EpisodeUserDetails.swift#L14-L23">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit8EpisodesC"></a>
+                    <a name="//apple_ref/swift/Class/Episodes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit8EpisodesC">Episodes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of episodes, such as the episodes&rsquo; season.</p>
+
+                        <a href="Classes/Episodes.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Episodes</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Episodes/Episodes.swift#L15-L37">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12FavoriteShowC"></a>
+                    <a name="//apple_ref/swift/Class/FavoriteShow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12FavoriteShowC">FavoriteShow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a show&rsquo;s favorite status.</p>
+
+                        <a href="Classes/FavoriteShow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FavoriteShow</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/FavoriteShow.swift#L15-L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12GenreElementC"></a>
+                    <a name="//apple_ref/swift/Class/GenreElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12GenreElementC">GenreElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single genre, such as the genre&rsquo;s name, color, and symbol.</p>
+
+                        <a href="Classes/GenreElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GenreElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Genres/GenreElement.swift#L14-L39">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit6GenresC"></a>
+                    <a name="//apple_ref/swift/Class/Genres" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit6GenresC">Genres</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of genres.</p>
+
+                        <a href="Classes/Genres.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Genres</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Genres/Genres.swift#L15-L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit13SeasonElementC"></a>
+                    <a name="//apple_ref/swift/Class/SeasonElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit13SeasonElementC">SeasonElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single season, such as the season&rsquo;s title, number, and episodes count.</p>
+
+                        <a href="Classes/SeasonElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeasonElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Seasons/SeasonElement.swift#L14-L39">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit7SeasonsC"></a>
+                    <a name="//apple_ref/swift/Class/Seasons" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit7SeasonsC">Seasons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of seasons.</p>
+
+                        <a href="Classes/Seasons.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Seasons</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/Seasons/Seasons.swift#L15-L32">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit11ShowDetailsC"></a>
+                    <a name="//apple_ref/swift/Class/ShowDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit11ShowDetailsC">ShowDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of shows.</p>
+
+                        <a href="Classes/ShowDetails.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ShowDetails</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/ShowDetails.swift#L15-L36">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit18ShowDetailsElementC"></a>
+                    <a name="//apple_ref/swift/Class/ShowDetailsElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit18ShowDetailsElementC">ShowDetailsElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single show, such as the show&rsquo;s title, episode count, and air date.</p>
+
+                        <a href="Classes/ShowDetailsElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ShowDetailsElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Show/ShowDetailsElement.swift#L14-L240">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12ThemeElementC"></a>
+                    <a name="//apple_ref/swift/Class/ThemeElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12ThemeElementC">ThemeElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single theme, such as the theme&rsquo;s name, download count, and download link.</p>
+
+                        <a href="Classes/ThemeElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThemeElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Theme/ThemeElement.swift#L14-L43">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit6ThemesC"></a>
+                    <a name="//apple_ref/swift/Class/Themes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit6ThemesC">Themes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of themes.</p>
+
+                        <a href="Classes/Themes.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Themes</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Theme/Themes.swift#L15-L33">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit10ThreadPostC"></a>
+                    <a name="//apple_ref/swift/Class/ThreadPost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit10ThreadPostC">ThreadPost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single thread post.</p>
+
+                        <a href="Classes/ThreadPost.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadPost</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Thread/ThreadPost.swift#L16-L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit13ThreadRepliesC"></a>
+                    <a name="//apple_ref/swift/Class/ThreadReplies" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit13ThreadRepliesC">ThreadReplies</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of thread replies, such as the thread reply&rsquo;s current page, last page, and total pages count.</p>
+
+                        <a href="Classes/ThreadReplies.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadReplies</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Thread/ThreadReplies.swift#L15-L44">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit11ThreadReplyC"></a>
+                    <a name="//apple_ref/swift/Class/ThreadReply" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit11ThreadReplyC">ThreadReply</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single thread reply.</p>
+
+                        <a href="Classes/ThreadReply.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadReply</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Thread/ThreadReply.swift#L15-L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit20ThreadRepliesElementC"></a>
+                    <a name="//apple_ref/swift/Class/ThreadRepliesElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit20ThreadRepliesElementC">ThreadRepliesElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single thread reply, such as the reply&rsquo;s content, and score.</p>
+
+                        <a href="Classes/ThreadRepliesElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ThreadRepliesElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Thread/ThreadReplyElement.swift#L14-L39">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1832,7 +1677,162 @@ For further control over the information saved in <code>Keychain</code>, you can
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/VoteThread.swift#L15-L24">Show on GitHub</a>
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/Thread/VoteThread.swift#L15-L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit12BadgeElementC"></a>
+                    <a name="//apple_ref/swift/Class/BadgeElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit12BadgeElementC">BadgeElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single badge, such as the badge&rsquo;s name, description, and text color.</p>
+
+                        <a href="Classes/BadgeElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BadgeElement</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/BadgeElement.swift#L15-L40">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit11CurrentUserC"></a>
+                    <a name="//apple_ref/swift/Class/CurrentUser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit11CurrentUserC">CurrentUser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about the current user, such as the current user&rsquo;s username, bio, and session.</p>
+
+                        <a href="Classes/CurrentUser.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CurrentUser</span> <span class="p">:</span> <span class="kt"><a href="Classes/UserProfile.html">UserProfile</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/CurrentUser.swift#L14-L28">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit4UserC"></a>
+                    <a name="//apple_ref/swift/Class/User" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit4UserC">User</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a single user, such as the user&rsquo;s profile, and authentication token.</p>
+
+                        <a href="Classes/User.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">User</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/User.swift#L15-L41">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit10UserFollowC"></a>
+                    <a name="//apple_ref/swift/Class/UserFollow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit10UserFollowC">UserFollow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about a collection of follow lists, such as the follow list&rsquo;s current page number, and last page number.</p>
+
+                        <a href="Classes/UserFollow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserFollow</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/UserFollow.swift#L15-L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KurozoraKit11UserProfileC"></a>
+                    <a name="//apple_ref/swift/Class/UserProfile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KurozoraKit11UserProfileC">UserProfile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mutable object that stores information about the user profile, such as the user&rsquo;s username, bio, and session.</p>
+
+                        <a href="Classes/UserProfile.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UserProfile</span> <span class="p">:</span> <span class="kt">JSONDecodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/UserProfile.swift#L14-L120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
