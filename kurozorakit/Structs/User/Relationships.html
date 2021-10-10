@@ -8,21 +8,29 @@
     <script src="../../js/jquery.min.js" defer></script>
     <script src="../../js/jazzy.js" defer></script>
     
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/Relationships" class="dashAnchor"></a>
     <a title="Relationships Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html">KurozoraKit 0.10.0 Docs</a> (100% documented)</p>
-        <p class="header-right"><a href="https://github.com/Kurozora/KurozoraKit"><img src="../../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fdeveloper.kurozora.app%2Fkurozorakit%2Fdocsets%2FKurozoraKit.xml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+        <p><a href="../../index.html">KurozoraKit 0.17.8 Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/Kurozora/KurozoraKit"><img src="../../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fdeveloper.kurozora.app%2Fkurozorakit%2Fdocsets%2FKurozoraKit.xml"><img src="../../img/dash.png" alt="Dash"/>Install in Dash</a></p>
+        <div class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../../index.html">KurozoraKit Reference</a>
-        <img id="carat" src="../../img/carat.png" />
+        <img id="carat" src="../../img/carat.png" alt=""/>
         Relationships Structure Reference
       </p>
     </div>
@@ -33,6 +41,21 @@
             <a href="../../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../../Classes/Episode.html">Episode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Episode/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/FeedMessage.html">FeedMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/FeedMessage/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/FeedMessage/Relationships.html">– Relationships</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Classes/KKAPIError.html">KKAPIError</a>
               </li>
               <li class="nav-group-task">
@@ -40,6 +63,27 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Classes/KurozoraKit.html">KurozoraKit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Show.html">Show</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Show/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Show/Relationships.html">– Relationships</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/ShowIdentity.html">ShowIdentity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/UserNotification.html">UserNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/UserNotification/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/UserNotification/Payload.html">– Payload</a>
               </li>
             </ul>
           </li>
@@ -62,7 +106,31 @@
                 <a href="../../Enums/FollowStatus.html">FollowStatus</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Enums/ForumOrder.html">ForumOrder</a>
+                <a href="../../Enums/KKEndpoint.html">KKEndpoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Feed.html">– Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Me.html">– Me</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Shows.html">– Shows</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Explore.html">– Explore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Store.html">– Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Themes.html">– Themes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Users.html">– Users</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/KKEndpoint/Legal.html">– Legal</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/KKLibrary.html">KKLibrary</a>
@@ -74,16 +142,13 @@
                 <a href="../../Enums/KKLibrary/SortType.html">– SortType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Enums/LockStatus.html">LockStatus</a>
+                <a href="../../Enums/OAuthAction.html">OAuthAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/ReadStatus.html">ReadStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/ReminderStatus.html">ReminderStatus</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Enums/VoteStatus.html">VoteStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/WatchStatus.html">WatchStatus</a>
@@ -103,7 +168,13 @@
                 <a href="../../Extensions/String.html">String</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIViewController.html">UIViewController</a>
               </li>
             </ul>
           </li>
@@ -130,13 +201,10 @@
             <a href="../../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../../Structs/Actor.html">Actor</a>
+                <a href="../../Structs/AdaptationSource.html">AdaptationSource</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/Actor/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ActorResponse.html">ActorResponse</a>
+                <a href="../../Structs/AiringStatus.html">AiringStatus</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Badge.html">Badge</a>
@@ -160,19 +228,19 @@
                 <a href="../../Structs/CastResponse.html">CastResponse</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/CastRole.html">CastRole</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/Character.html">Character</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Character/Attributes.html">– Attributes</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/Character/Relationships.html">– Relationships</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/CharacterResponse.html">CharacterResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Episode.html">Episode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Episode/Attributes.html">– Attributes</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/EpisodeResponse.html">EpisodeResponse</a>
@@ -202,64 +270,19 @@
                 <a href="../../Structs/FavoriteShowResponse.html">FavoriteShowResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/FeedPost.html">FeedPost</a>
+                <a href="../../Structs/FeedMessageHeart.html">FeedMessageHeart</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/FeedPost/Attributes.html">– Attributes</a>
+                <a href="../../Structs/FeedMessageHeartResponse.html">FeedMessageHeartResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/FeedPost/Relationships.html">– Relationships</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/FeedPostResponse.html">FeedPostResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/FeedSection.html">FeedSection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/FeedSection/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/FeedSectionResponse.html">FeedSectionResponse</a>
+                <a href="../../Structs/FeedMessageResponse.html">FeedMessageResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/FollowUpdate.html">FollowUpdate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/FollowUpdateResponse.html">FollowUpdateResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsLock.html">ForumsLock</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsLockResponse.html">ForumsLockResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsSection.html">ForumsSection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsSection/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsSectionResponse.html">ForumsSectionResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsThread.html">ForumsThread</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsThread/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsThread/Relationships.html">– Relationships</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsThreadResponse.html">ForumsThreadResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsVote.html">ForumsVote</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ForumsVoteResponse.html">ForumsVoteResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Genre.html">Genre</a>
@@ -271,9 +294,6 @@
                 <a href="../../Structs/GenreResponse.html">GenreResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/KKEndpoints.html">KKEndpoints</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../../Structs/KKError.html">KKError</a>
               </li>
               <li class="nav-group-task">
@@ -281,6 +301,24 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/KKSuccess.html">KKSuccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Language/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/LanguageResponse.html">LanguageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Legal.html">Legal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Legal/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/LegalResponse.html">LegalResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/LibraryUpdate.html">LibraryUpdate</a>
@@ -304,6 +342,27 @@
                 <a href="../../Structs/MALImport/Behavior.html">– Behavior</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/Media.html">Media</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/MediaRelation.html">MediaRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/OAuthResponse.html">OAuthResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Person.html">Person</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Person/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Person/Relationships.html">– Relationships</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/PersonResponse.html">PersonResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/Platform.html">Platform</a>
               </li>
               <li class="nav-group-task">
@@ -313,16 +372,19 @@
                 <a href="../../Structs/PlatformResponse.html">PlatformResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/PrivacyPolicy.html">PrivacyPolicy</a>
+                <a href="../../Structs/Receipt.html">Receipt</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/PrivacyPolicy/Attributes.html">– Attributes</a>
+                <a href="../../Structs/Receipt/Attributes.html">– Attributes</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/PrivacyPolicyResponse.html">PrivacyPolicyResponse</a>
+                <a href="../../Structs/ReceiptResponse.html">ReceiptResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/RelatedShow.html">RelatedShow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/RelatedShow/CodingKeys.html">– CodingKeys</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/RelatedShow/Attributes.html">– Attributes</a>
@@ -358,19 +420,31 @@
                 <a href="../../Structs/SessionResponse.html">SessionResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/Show.html">Show</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Show/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Show/Relationships.html">– Relationships</a>
+                <a href="../../Structs/ShowIdentityResponse.html">ShowIdentityResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/ShowResponse.html">ShowResponse</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/ShowType.html">ShowType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/SignInResponse.html">SignInResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Staff.html">Staff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Staff/Attributes.html">– Attributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Staff/Relationships.html">– Relationships</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/StaffResponse.html">StaffResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/StaffRole.html">StaffRole</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Studio.html">Studio</a>
@@ -385,6 +459,9 @@
                 <a href="../../Structs/StudioResponse.html">StudioResponse</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/TVRating.html">TVRating</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/Theme.html">Theme</a>
               </li>
               <li class="nav-group-task">
@@ -392,18 +469,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/ThemeResponse.html">ThemeResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ThreadReply.html">ThreadReply</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ThreadReply/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ThreadReply/Relationships.html">– Relationships</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/ThreadReplyResponse.html">ThreadReplyResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/User.html">User</a>
@@ -418,15 +483,6 @@
                 <a href="../../Structs/UserFollow.html">UserFollow</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/UserNotification.html">UserNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/UserNotification/Attributes.html">– Attributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/UserNotification/Payload.html">– Payload</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../../Structs/UserNotificationResponse.html">UserNotificationResponse</a>
               </li>
               <li class="nav-group-task">
@@ -434,6 +490,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/UserNotificationUpdateResponse.html">UserNotificationUpdateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/UserRating.html">UserRating</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/UserResponse.html">UserResponse</a>
@@ -454,12 +513,16 @@
             <h1>Relationships</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Relationships</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
             <p>A root object that stores information about user relationships, such as the sessions, and badges that belong to it.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/Kurozora/KurozoraKit/tree/master/KurozoraKit/Classes/Models/User/UserRelationships.swift#L12-L19">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -468,7 +531,7 @@
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
                 <div class="section-name-container">
                   <a class="section-name-link" href="#/Properties"></a>
-                  <h3 class="section-name"><p>Properties</p>
+                  <h3 class="section-name"><span>Properties</span>
 </h3>
                 </div>
               </div>
@@ -538,11 +601,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>Copyright © 2018-present Khoren Katklian. All rights reserved. See <a class="link" href="https://github.com/Kurozora/KurozoraKit/blob/master/LICENSE" target="_blank" rel="external">license</a>.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Copyright © 2018-present Khoren Katklian. All rights reserved. See <a class="link" href="https://github.com/Kurozora/KurozoraKit/blob/master/LICENSE" target="_blank" rel="external noopener">license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
