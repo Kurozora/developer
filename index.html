@@ -1,154 +1,465 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta content="Kurozora B.V." name="Author">
-	<meta content="Awesome tools and resources for developing with Kurozora technologies." name="Description">
-	<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+<html
+    lang="en"
+    x-data="{
+        selectedTheme: $persist('auto').as('_x_theme')
+    }"
+    x-bind:class="{ 'dark': selectedTheme === 'dark' || (selectedTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) }"
+    x-init="console.log(selectedTheme === 'dark' || (selectedTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches))"
+>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="Kurozora" name="Author">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:url" content="https://developer.kurozora.app" />
+        <meta property="og:site_name" content="Kurozora" />
+        <meta property="twitter:site" content="@KurozoraApp" />
+        <meta name="theme-color" content="#F3F4F6">
+        <meta name="theme-color" content="#F3F4F6" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#353A50" media="(prefers-color-scheme: dark)">
 
-	<title>Kurozora Developer</title>
+        <title>Kurozora Developer</title>
+        <meta name="description" content="Build amazing anime experiences with Kurozora.">
 
-	<!--  Favicons -->
-	<link href="/assets/images/favicon.ico" rel="shortcut icon">
-	<link href="/assets/images/favicon.ico" rel="icon">
+        <!-- Favicons -->
+        <link href="/favicon.ico" rel="shortcut icon">
 
-	<!--  Compiled and minified CSS -->
-	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body class="d-flex flex-column h-100">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="/"><img src="/assets/images/logo.png" alt="" height="48"> Developer</a>
-	<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-	        data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-</nav>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
 
-<header class="container-fluid mb-5">
-	<div class="container">
-		<div class="row">
-			<div class="m-auto col col-lg-8 col-md-10 col-sm-12 text-center">
-				<h1>
-					<small>Develop</small>
-					<br>
-					Make Your Dreams
-					<span class="text-nowrap"> a Reality</span>
-				</h1>
-				<p>
-					With an intuitive API, and powerful features of Kurozora
-	                technologies, you have the freedom to create your most innovative client apps
-	                ever.
-				</p>
-			</div>
-		</div>
+        <!-- Styles -->
+        <link rel="preload" href="/assets/css/app.css" as="style">
+        <link rel="stylesheet" href="/assets/css/app.css" />
 
-		<div class="row">
-			<div class="col">
-				<img class="img-fluid" src="/assets/images/Kurozora_on_Device.png" alt="" height="1000">
-			</div>
-		</div>
-	</div>
-</header>
+        <!-- JavaScript -->
+        <script src="/assets/js/app.js" defer></script>
+    </head>
 
-<main class="mb-5" role="main">
-	<section class="mb-5">
-		<div class="container-fluid bg-purple-light mb-4">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="my-5 py-5">
-							<div class="d-block">
-								<img src="/assets/images/icons/KurozoraKit.png" alt="" height="128">
-								<h2>KurozoraKit</h2>
-								<p class="no-link">
-									KurozoraKit lets users manage their anime library and
-									access many other serices
-									from your app.
-								</p>
-								<a href="/kurozorakit/" class="text-primary stretched-link">What’s new in
-								                                                                     KurozoraKit</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <body
+        x-data="{
+            isNavOpen: false
+        }"
+        class="bg-white dark:bg-black"
+    >
+        <nav class="relative bg-white border-b border-gray-100 z-50 dark:bg-neutral-800 dark:border-neutral-700">
+            <div class="max-w-7xl mx-auto pl-4 pr-4 sm:px-6">
+                <div class="flex justify-between h-16">
+                    <div class="-mr-2 flex items-center md:hidden">
+                        <button
+                            class="inline-flex items-center justify-center pt-2 pr-2 pb-2 pl-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                            x-on:click="isNavOpen = ! isNavOpen"
+                        >
+                            <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24">
+                                <path
+                                    class="inline-flex transform origin-center"
+                                    x-show="! isNavOpen"
+                                    x-transition:enter="ease-out duration-200"
+                                    x-transition:enter-start="opacity-0 scale-75 rotate-180"
+                                    x-transition:enter-end="opacity-100 scale-100 rotate-0"
+                                    x-transition:leave="ease-in duration-200"
+                                    x-transition:leave-start="opacity-100 scale-100 rotate-0"
+                                    x-transition:leave-end="opacity-0 scale-75 rotate-180"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
 
-		<div class="container-fluid bg-blue-light">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="my-5 py-5">
-							<div class="d-block text-right">
-								<img src="/assets/images/icons/Kurozora_API.png" alt="" height="128">
-								<h2>Kurozora API</h2>
-								<p class="no-link">
-									Kurozora API is an intuitive interface that makes it easy
-									for your app to interact with Kurozora services.
-								</p>
-								<a href="https://api.kurozora.app/v1" class="text-primary stretched-link">Try out
-								                                                                     Kurozora API</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                                <path
+                                    class="inline-flex transform origin-center"
+                                    x-show="isNavOpen"
+                                    x-transition:enter="ease-out duration-200"
+                                    x-transition:enter-start="opacity-0 scale-75 rotate-180"
+                                    x-transition:enter-end="opacity-100 scale-100 rotate-0"
+                                    x-transition:leave="ease-in duration-200"
+                                    x-transition:leave-start="opacity-100 scale-100 rotate-0"
+                                    x-transition:leave-end="opacity-0 scale-75 rotate-180"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        </button>
+                    </div>
 
-	<section class="container">
-		<div class="row mb-5">
-			<div class="col col-lg-6 col-md-9 col-sm-12">
-				<h2>Resources</h2>
-				<p>Find tools and resources for creating client apps for Mac, iPhone, iPad,
-					<span class="text-nowrap">Apple Watch,</span>
-				   and
-					<span class="text-nowrap">Apple TV.</span>
-				</p>
-			</div>
-		</div>
-		<div class="row text-nowrap">
-			<div class="col">
-				<img class="mb-4" src="/assets/images/symbols/framework.svg" alt="" height="34">
-				<h4>Frameworks</h4>
-				<ul class="list-unstyled">
-					<a href="/kurozorakit/">
-						<img class="mr-1" src="/assets/images/icons/KurozoraKit.png" alt="" height="34">KurozoraKit<span
-							class="badge badge-primary ml-2">New</span>
-					</a>
-				</ul>
-			</div>
-			<div class="col">
-				<img class="mb-4" src="/assets/images/symbols/service.svg" alt="" height="34">
-				<h4>Services</h4>
-				<ul class="list-unstyled">
-					<a class="active" href="https://api.kurozora.app/v1">
-						<img class="mr-1" src="/assets/images/icons/Kurozora_API.png" alt="" height="34">Kurozora
-						                                                                                 API<span
-							class="badge badge-primary ml-2">New</span>
-					</a>
-				</ul>
-			</div>
-			<div class="col">
-				<img class="mb-4" src="/assets/images/symbols/package.svg" alt="" height="34">
-				<h4>Packages</h4>
-				<ul class="list-unstyled">
-					<a class="active" href="https://github.com/Kurozora/laravel-cooldown">
-						<img class="mr-1" src="/assets/images/symbols/cooldown.svg" alt="" height="34">Cooldown<span
-							class="badge badge-primary ml-2">New</span>
-					</a>
-				</ul>
-			</div>
-		</div>
-	</section>
-</main>
+                    <div class="flex w-full justify-between">
+                        <span class="flex w-full">
+                            <a
+                                class="inline-flex items-center m-auto text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none focus:text-gray-700 md:my-0 md:ml-0 md:mr-8 md:pt-1 dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                                href="/"
+                            >
+                                <svg class="block h-9 w-auto" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <g transform="translate(0.500000, 0.000000)">
+                                        <path d="M4.26356589,25.6953027 C4.25865611,30.1220323 6.11477477,34.3424354 9.36940612,37.3048315 C6.04486859,33.8984502 5.89762765,28.4720384 9.03244888,24.886623 C12.1672701,21.3012076 17.5136377,20.7811787 21.2674782,23.6965497 C25.0213187,26.6119208 25.9007262,31.9671163 23.2799805,35.9517818 C20.6592348,39.9364472 15.4332991,41.1898517 11.3205565,38.8201669 C13.8256676,40.4665942 16.7506698,41.3407107 19.7388593,41.3359375 C28.2881704,41.3359375 35.2170543,34.3335972 35.2170543,25.6953027 C35.2170543,17.0570082 28.2881704,10.0546875 19.7388593,10.0546875 C11.1924595,10.0546875 4.26356589,17.0575967 4.26356589,25.6953027 Z"></path>
+                                        <path d="M1.02325581,22.9450189 C1.02325581,24.4181799 1.17548672,25.8873356 1.47831164,27.3285372 C1.40322831,26.6431228 1.36549315,25.9540748 1.36527611,25.2644961 C1.36527611,14.9125812 9.69261577,6.5201841 19.9642832,6.5201841 C30.2359506,6.5201841 38.5632903,14.9143428 38.5632903,25.2644961 C38.5632903,35.2634982 30.7941364,43.4333429 21.0084053,43.9788605 C21.3090565,43.9917791 21.610873,44 21.9150202,44 C33.4516369,44 42.8062016,34.5735271 42.8062016,22.9450189 C42.8062016,11.3165107 33.4528022,1.890625 21.9150202,1.890625 C10.3784035,1.890625 1.02325581,11.3170979 1.02325581,22.9450189 Z"></path>
+                                        <path d="M0.937984496,12.890625 C3.00055919,6.51588805 8.78568735,1.96729358 15.0930233,0 C7.6776734,0 0.937984496,4.79560892 0.937984496,12.890625 Z"></path>
+                                    </g>
+                                </svg>
+                                <p class="uppercase text-lg font-semibold">&nbsp;Developer</p>
+                            </a>
 
-<footer class="bg-light mt-5 py-3">
-	<div class="container">
-		<p>Copyright © 2018-present Kurozora B.V. All rights reserved.</p>
-	</div>
-</footer>
-<script src="/assets/js/bootstrap.min.js"></script>
-</body>
+                            <div class="hidden md:flex md:justify-between md:-my-px md:w-full lg:w-auto lg:space-x-8">
+                                <a
+                                    class="inline-flex items-center pl-1 pr-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                                    href="/"
+                                >
+                                    Explore
+                                </a>
+
+                                <a
+                                    class="inline-flex items-center pl-1 pr-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                                    href="/KurozoraKit"
+                                >
+                                    KurozoraKit
+                                </a>
+
+                                <a
+                                    class="inline-flex items-center pl-1 pr-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                                    href="https://github.com/Kurozora" target="_blank"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="block absolute pl-4 pr-4 w-full bg-white rounded-b-2xl md:hidden dark:bg-neutral-800"
+                x-show="isNavOpen"
+                x-collapse.duration.400ms=""
+            >
+                <div class="pt-2 pb-3 space-y-1">
+                    <a
+                        class="block pl-3 pr-4 pt-2 pb-2 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-50 rounded-lg transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                        href="/"
+                    >
+                        Explore
+                    </a>
+
+                    <a
+                        class="block pl-3 pr-4 pt-2 pb-2 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-50 rounded-lg transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                        href="/KurozoraKit"
+                    >
+                        KurozoraKit
+                    </a>
+
+                    <a
+                        class="block pl-3 pr-4 pt-2 pb-2 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-50 rounded-lg transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                        href="https://github.com/Kurozora" target="_blank"
+                    >
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navigation Overlay -->
+        <div
+                class="fixed inset-0 transform transition-all z-40 md:hidden"
+                x-show="isNavOpen"
+                x-on:click="isNavOpen = false;"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+        >
+            <div class="absolute inset-0 bg-black opacity-75"></div>
+        </div>
+
+        <main>
+            <!-- Header -->
+            <section class="pl-4 pr-4 pt-36 sm:px-6">
+                <div class="relative max-w-2xl mx-auto text-center">
+                    <div class="flex flex-col items-center">
+                        <img class="m-10 mb-0" width="82" height="82" src="/assets/images/icons/app_icon.webp" alt="Kurozora">
+
+                        <p class="mt-2 text-4xl font-bold leading-tight tracking-tight">
+                            <span class="text-xl font-semibold">Develop</span>
+                            <br>
+                            Make Your Dreams
+                            <span class="whitespace-nowrap"> a Reality</span>
+                        </p>
+                    </div>
+
+                    <div class="mt-10">
+                        <p class="text-lg font-light md:text-2xl">
+                            With an intuitive API, and powerful features of Kurozora
+                            technologies, you have the freedom to create your most innovative client apps
+                            ever.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-20 mt-10 overflow-hidden">
+                    <img src="/assets/images/promotional/kurozora_on_device.webp" alt="Kurozora on device">
+                </div>
+            </section>
+
+            <!-- Docs -->
+            <section class="flex flex-col gap-6 pl-4 pr-4 pt-4 pb-10 bg-gray-100 sm:px-6 sm:pt-6  md:flex-row dark:bg-neutral-950">
+                <div class="relative flex flex-col items-center space-y-20 pt-6 pr-6 pb-6 pl-6 w-full md:w-1/2 bg-white rounded-lg dark:bg-neutral-900">
+                    <div class="flex flex-col items-center space-y-4 max-w-xl text-center">
+                        <p class="mt-2 text-2xl font-bold leading-tight tracking-tight">KurozoraKit</p>
+
+                        <p class="text-lg font-light md:text-xl">
+                            KurozoraKit lets users manage their anime library and access many other services from your app.
+                        </p>
+                    </div>
+
+                    <img class="w-80" src="/assets/images/icons/KurozoraKit.png" alt="KurozoraKit logo">
+
+                    <a class="inline-flex items-center text-orange-500 transition ease-in-out duration-150 focus:outline-none hover:text-orange-400 hover:underline active:text-orange-600 after:absolute after:inset-0" href="/kurozorakit" >What’s new in KurozoraKit</a>
+                </div>
+
+                <div class="relative flex flex-col items-center space-y-20 pt-6 pr-6 pb-6 pl-6 w-full md:w-1/2 bg-white rounded-lg dark:bg-neutral-900">
+                    <div class="flex flex-col items-center space-y-4 max-w-xl text-center">
+                        <p class="mt-2 text-2xl font-bold leading-tight tracking-tight">Kurozora API</p>
+
+                        <p class="text-lg font-light md:text-xl">
+                            Kurozora API is an intuitive interface that makes it easy for your app to interact with Kurozora services.
+                        </p>
+                    </div>
+
+                    <img class="w-80" src="/assets/images/icons/Kurozora_API.png" alt="KurozoraKit logo">
+
+                    <a class="inline-flex items-center text-orange-500 transition ease-in-out duration-150 focus:outline-none hover:text-orange-400 hover:underline active:text-orange-600 after:absolute after:inset-0" href="https://api.kurozora.app" >Try out Kurozora API</a>
+                </div>
+            </section>
+
+            <!-- Resources -->
+            <section class="flex flex-col gap-6 pl-4 pr-4 pt-36 pb-10 sm:px-6 dark:bg-black">
+                <div class="relative max-w-7xl mx-auto">
+                    <div class="flex flex-col">
+                        <p class="mt-2 text-4xl font-bold leading-tight tracking-tight">
+                            Resources
+                        </p>
+
+                        <p class="text-lg font-light md:text-2xl">
+                            Find tools and resources for creating client apps for Mac, iPhone, iPad,
+                            <span class="whitespace-nowrap">Apple Watch,</span>
+                            and
+                            <span class="whitespace-nowrap">Apple TV.</span>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-between gap-10 mt-10">
+                        <div class="relative flex-grow space-y-2">
+                            <div class="flex flex-row space-x-2">
+                                <img class="w-6" src="/assets/images/symbols/framework.svg" alt="Kurozora Frameworks">
+
+                                <p class="uppercase text-lg font-semibold">Frameworks</p>
+                            </div>
+
+                            <ul class="m-0 mb-4 list-none">
+                                <li>
+                                    <a class="flex flex-row items-center space-x-1" href="/kurozorakit">
+                                        <img class="w-8" src="/assets/images/icons/KurozoraKit.png" alt="KurozoraKit logo">
+
+                                        <p>KurozoraKit</p>
+
+                                        <span class="pt-0.5 pr-2 pb-0.5 pl-2 bg-orange-500 text-white text-center text-xs font-bold rounded-full whitespace-nowrap">New</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="relative flex-grow space-y-2">
+                            <div class="flex flex-row space-x-2">
+                                <img class="w-6" src="/assets/images/symbols/service.svg" alt="Kurozora Services">
+
+                                <p class="uppercase text-lg font-semibold">Services</p>
+                            </div>
+
+                            <ul class="m-0 mb-4 list-none">
+                                <li>
+                                    <a class="flex flex-row items-center space-x-1" href="https://api.kurozora.app">
+                                        <img class="w-8" src="/assets/images/icons/Kurozora_API.png" alt="Kurozora API">
+
+                                        <p>Kurozora API</p>
+
+                                        <span class="pt-0.5 pr-2 pb-0.5 pl-2 bg-orange-500 text-white text-center text-xs font-bold rounded-full whitespace-nowrap">Updated</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="relative flex-grow space-y-2">
+                            <div class="flex flex-row space-x-2">
+                                <img class="w-6" src="/assets/images/symbols/package.svg" alt="Kurozora Packages">
+
+                                <p class="uppercase text-lg font-semibold">Packages</p>
+                            </div>
+
+                            <ul class="m-0 mb-4 list-none">
+                                <li>
+                                    <a class="flex flex-row items-center space-x-1" href="https://github.com/Kurozora/laravel-cooldown">
+                                        <img class="w-8" src="/assets/images/icons/cooldown_icon.png" alt="" height="34">
+
+                                        <p>Cooldown</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-100 dark:bg-neutral-800">
+            <div class="max-w-7xl mx-auto pl-4 pr-4 pt-10 pb-6 sm:px-6">
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">Platforms</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://github.com/kurozora/kurozora-android" target="_blank">Android</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://github.com/kurozora/kurozora-app" target="_blank">iOS, iPadOS, and macOS</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://github.com/kurozora/kurozora-linux" target="_blank">Linux, and Window</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://github.com/kurozora/kurozora-web" target="_blank">Website</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">Services</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://developer.kurozora.app">Kurozora Developer</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://api.kurozora.app">Kurozora API</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.statuspage.io" target="_blank">Kurozora Status</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">About Kurozora</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/team">Kurozora Team</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/projects">Open-Source Projects</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/contact">Contact Kurozora</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/press-kit">Press-Kit</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">Legal</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/legal/privacy-policy">Privacy Policy</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" href="https://kurozora.app/legal/terms-of-use">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">Socials</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://discord.com/f3QFzGqsah">Discord</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://instagram.com/Kurozora_App">Instagram</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://www.reddit.com/r/Kurozora">Reddit</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://twitter.com/KurozoraApp">Twitter</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://youtube.com/@KurozoraApp">YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-1/2 sm:w-1/3 text-center md:w-1/4 md:text-left lg:w-1/6">
+                        <h5 class="uppercase text-sm mb-2 font-semibold">Support Us</h5>
+                        <ul class="m-0 mb-4 list-none">
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://ko-ficom/Kurozoraurl">Ko-Fi</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://patreon.com/Kurozora">Patreon</a>
+                            </li>
+
+                            <li class="mt-2">
+                                <a class="cursor-pointer text-sm text-gray-400 hover:underline hover:text-orange-500 transition ease-in-out duration-150 dark:text-neutral-400 dark:hover:text-orange-500" target="_blank" href="https://paypal.com/paypalme/Kiritokatklian">PayPal</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="w-full mb-2 bg-gray-200 border-gray-200 dark:bg-neutral-700 dark:border-neutral-700" />
+
+                    <div
+                        x-data="{
+                            year: new Date().getFullYear()
+                        }"
+                        class="flex flex-row justify-between w-full text-center md:text-left"
+                    >
+                        <p class="text-sm text-gray-500 dark:text-neutral-500">Copyright © 2018-<span x-text="year"></span> Kurozora. All rights reserved</p>
+
+                        <div class="flex flex-row pt-1 pr-1 pb-1 pl-1 rounded-full border border-orange-500">
+                            <button
+                                class="pt-0.5 pr-2 pb-0.5 pl-2 cursor-pointer text-orange-500 text-center text-xs rounded-full whitespace-nowrap"
+                                x-bind:class="selectedTheme === 'light' ? 'bg-orange-500 text-white' : 'text-orange-500'"
+                                x-on:click="selectedTheme = 'light'"
+                            >Light</button>
+
+                            <button
+                                class="pt-0.5 pr-2 pb-0.5 pl-2 cursor-pointer text-orange-500 text-center text-xs rounded-full whitespace-nowrap"
+                                x-bind:class="selectedTheme === 'dark' ? 'bg-orange-500 text-white' : 'text-orange-500'"
+                                x-on:click="selectedTheme = 'dark'"
+                            >Dark</button>
+
+                            <button
+                                class="pt-0.5 pr-2 pb-0.5 pl-2 cursor-pointer text-center text-xs rounded-full whitespace-nowrap"
+                                x-bind:class="selectedTheme === 'auto' ? 'bg-orange-500 text-white' : 'text-orange-500'"
+                                x-on:click="selectedTheme = 'auto'"
+                            >Auto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
