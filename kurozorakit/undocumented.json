@@ -1,6 +1,495 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Enums/KKSearchFilter.swift",
+      "line": 8,
+      "symbol": "KKSearchFilter",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Access Tokens/AccessToken.swift",
+      "line": 11,
+      "symbol": "AccessToken.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/App Theme/AppTheme.swift",
+      "line": 11,
+      "symbol": "AppTheme.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Character/Character.swift",
+      "line": 11,
+      "symbol": "Character.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Character/Identity/CharacterIdentity.swift",
+      "line": 11,
+      "symbol": "CharacterIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Character/Identity/CharacterIdentity.swift",
+      "line": 23,
+      "symbol": "CharacterIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Episode/Episode.swift",
+      "line": 11,
+      "symbol": "Episode.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Episode/Identity/EpisodeIdentity.swift",
+      "line": 11,
+      "symbol": "EpisodeIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Episode/Identity/EpisodeIdentity.swift",
+      "line": 23,
+      "symbol": "EpisodeIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Explore/ExploreCategory.swift",
+      "line": 11,
+      "symbol": "ExploreCategory.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Explore/Identity/ExploreCategoryIdentity.swift",
+      "line": 18,
+      "symbol": "ExploreCategoryIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Feed/Message/FeedMessage.swift",
+      "line": 11,
+      "symbol": "FeedMessage.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Feed/Message/Identity/FeedMessageIdentity.swift",
+      "line": 11,
+      "symbol": "FeedMessageIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Feed/Message/Identity/FeedMessageIdentity.swift",
+      "line": 23,
+      "symbol": "FeedMessageIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Game/Identity/GameIdentity.swift",
+      "line": 18,
+      "symbol": "GameIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Genre/Genre.swift",
+      "line": 11,
+      "symbol": "Genre.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Genre/Identity/GenreIdentity.swift",
+      "line": 11,
+      "symbol": "GenreIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Genre/Identity/GenreIdentity.swift",
+      "line": 23,
+      "symbol": "GenreIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Language/Language.swift",
+      "line": 11,
+      "symbol": "Language.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Literature/Identity/LiteratureIdentity.swift",
+      "line": 18,
+      "symbol": "LiteratureIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Person/Identity/PersonIdentity.swift",
+      "line": 11,
+      "symbol": "PersonIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Person/Identity/PersonIdentity.swift",
+      "line": 23,
+      "symbol": "PersonIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Person/Person.swift",
+      "line": 11,
+      "symbol": "Person.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/AppThemeFilter.swift",
+      "line": 8,
+      "symbol": "AppThemeFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/AppThemeFilter.swift",
+      "line": 23,
+      "symbol": "AppThemeFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/CharacterFilter.swift",
+      "line": 8,
+      "symbol": "CharacterFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/CharacterFilter.swift",
+      "line": 37,
+      "symbol": "CharacterFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/EpisodeFilter.swift",
+      "line": 8,
+      "symbol": "EpisodeFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/EpisodeFilter.swift",
+      "line": 41,
+      "symbol": "EpisodeFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/GameFilter.swift",
+      "line": 8,
+      "symbol": "GameFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/GameFilter.swift",
+      "line": 37,
+      "symbol": "GameFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/LiteratureFilter.swift",
+      "line": 8,
+      "symbol": "LiteratureFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/LiteratureFilter.swift",
+      "line": 45,
+      "symbol": "LiteratureFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/PersonFilter.swift",
+      "line": 8,
+      "symbol": "PersonFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/PersonFilter.swift",
+      "line": 23,
+      "symbol": "PersonFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/ShowFilter.swift",
+      "line": 8,
+      "symbol": "ShowFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/ShowFilter.swift",
+      "line": 43,
+      "symbol": "ShowFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/SongFilter.swift",
+      "line": 8,
+      "symbol": "SongFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/SongFilter.swift",
+      "line": 13,
+      "symbol": "SongFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/StudioFilter.swift",
+      "line": 8,
+      "symbol": "StudioFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/StudioFilter.swift",
+      "line": 25,
+      "symbol": "StudioFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/UserFilter.swift",
+      "line": 8,
+      "symbol": "UserFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Search/Filters/UserFilter.swift",
+      "line": 13,
+      "symbol": "UserFilter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Season/Identity/SeasonIdentity.swift",
+      "line": 11,
+      "symbol": "SeasonIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Season/Identity/SeasonIdentity.swift",
+      "line": 23,
+      "symbol": "SeasonIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Season/Season.swift",
+      "line": 11,
+      "symbol": "Season.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Session/Identity/SessionIdentity.swift",
+      "line": 21,
+      "symbol": "SessionIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Cast/Identity/CastIdentity.swift",
+      "line": 18,
+      "symbol": "CastIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Identity/ShowIdentity.swift",
+      "line": 11,
+      "symbol": "ShowIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Identity/ShowIdentity.swift",
+      "line": 23,
+      "symbol": "ShowIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Show Songs/Identity/ShowSongIdentity.swift",
+      "line": 11,
+      "symbol": "ShowSongIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Show Songs/Identity/ShowSongIdentity.swift",
+      "line": 23,
+      "symbol": "ShowSongIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Show Songs/ShowSong.swift",
+      "line": 11,
+      "symbol": "ShowSong.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Show.swift",
+      "line": 11,
+      "symbol": "Show.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Show/Staff/Staff.swift",
+      "line": 11,
+      "symbol": "Staff.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Song/Identity/SongIdentity.swift",
+      "line": 11,
+      "symbol": "SongIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Song/Identity/SongIdentity.swift",
+      "line": 23,
+      "symbol": "SongIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Song/Song.swift",
+      "line": 11,
+      "symbol": "Song.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Studio/Identity/StudioIdentity.swift",
+      "line": 11,
+      "symbol": "StudioIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Studio/Identity/StudioIdentity.swift",
+      "line": 23,
+      "symbol": "StudioIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Studio/Studio.swift",
+      "line": 11,
+      "symbol": "Studio.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Themes/Identity/ThemeIdentity.swift",
+      "line": 11,
+      "symbol": "ThemeIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Themes/Identity/ThemeIdentity.swift",
+      "line": 23,
+      "symbol": "ThemeIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/Themes/Theme.swift",
+      "line": 11,
+      "symbol": "Theme.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/User/Badge/Badge.swift",
+      "line": 11,
+      "symbol": "Badge.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/User/Identity/UserIdentity.swift",
+      "line": 11,
+      "symbol": "UserIdentity.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/User/Identity/UserIdentity.swift",
+      "line": 23,
+      "symbol": "UserIdentity.init(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/User/User.swift",
+      "line": 11,
+      "symbol": "User.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Models/User/User.swift",
+      "line": 18,
+      "symbol": "User.uuid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kirito/Developer/KurozoraKit/KurozoraKit/Classes/Protocols/Filterable.swift",
+      "line": 8,
+      "symbol": "Filterable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/kirito/Docs/KurozoraKit"
+  "source_directory": "/Users/kirito/Developer/KurozoraKit"
 }

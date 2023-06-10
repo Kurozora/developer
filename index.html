@@ -5,7 +5,6 @@
         selectedTheme: $persist('auto').as('_x_theme')
     }"
     x-bind:class="{ 'dark': selectedTheme === 'dark' || (selectedTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) }"
-    x-init="console.log(selectedTheme === 'dark' || (selectedTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches))"
 >
     <head>
         <meta charset="utf-8" />
@@ -110,7 +109,7 @@
 
                                 <a
                                     class="inline-flex items-center pl-1 pr-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                                    href="/KurozoraKit"
+                                    href="/kurozorakit/"
                                 >
                                     KurozoraKit
                                 </a>
@@ -214,7 +213,7 @@
 
                     <img class="w-80" src="/assets/images/icons/KurozoraKit.png" alt="KurozoraKit logo">
 
-                    <a class="inline-flex items-center text-orange-500 transition ease-in-out duration-150 focus:outline-none hover:text-orange-400 hover:underline active:text-orange-600 after:absolute after:inset-0" href="/kurozorakit" >What’s new in KurozoraKit</a>
+                    <a class="inline-flex items-center text-orange-500 transition ease-in-out duration-150 focus:outline-none hover:text-orange-400 hover:underline active:text-orange-600 after:absolute after:inset-0" href="/kurozorakit/" >What’s new in KurozoraKit</a>
                 </div>
 
                 <div class="relative flex flex-col items-center space-y-20 pt-6 pr-6 pb-6 pl-6 w-full md:w-1/2 bg-white rounded-lg dark:bg-neutral-900">
@@ -258,7 +257,7 @@
 
                             <ul class="m-0 mb-4 list-none">
                                 <li>
-                                    <a class="flex flex-row items-center space-x-1" href="/kurozorakit">
+                                    <a class="flex flex-row items-center space-x-1" href="/kurozorakit/">
                                         <img class="w-8" src="/assets/images/icons/KurozoraKit.png" alt="KurozoraKit logo">
 
                                         <p>KurozoraKit</p>
