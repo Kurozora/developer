@@ -1,0 +1,82 @@
+/* Kurozora Developer - Custom Theme
+   Brand color: #FF9300 (Kurozora Orange)
+*/
+
+:root {
+  --vp-c-brand-1: #FF9300;
+  --vp-c-brand-2: #e68500;
+  --vp-c-brand-3: #cc7600;
+  --vp-c-brand-soft: rgba(255, 147, 0, 0.14);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  /* Hero gradient */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #FF9300 30%,
+    #FFB84D
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #FF9300 50%,
+    #FFD699 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #FFB84D;
+  --vp-c-brand-2: #FF9300;
+  --vp-c-brand-3: #e68500;
+  --vp-c-brand-soft: rgba(255, 147, 0, 0.16);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #FFB84D 30%,
+    #FF9300
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #FF9300 50%,
+    #7a4600 50%
+  );
+}
+
+/* Custom container styles */
+.custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-1);
+}
+
+/* Button overrides */
+.VPButton.brand {
+  border-color: var(--vp-c-brand-1);
+  color: #fff;
+  background-color: var(--vp-c-brand-1);
+}
+
+.VPButton.brand:hover {
+  border-color: var(--vp-c-brand-2);
+  background-color: var(--vp-c-brand-2);
+}
+
+/* Badge styles for SDK versions */
+.VPBadge {
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+/* Feature card hover effect */
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  transition: border-color 0.25s;
+}

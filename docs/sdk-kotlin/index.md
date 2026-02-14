@@ -1,0 +1,169 @@
+# KurozoraKit (Kotlin)
+
+KurozoraKit for Kotlin is the official SDK for integrating Kurozora services into Android, Kotlin Multiplatform (KMP), and JVM applications. Built with modern Kotlin idioms, coroutines-first networking, and a multi-module architecture, it provides a type-safe, efficient bridge to the entire Kurozora API.
+
+## It Provides
+
+- **Multi-module architecture** -- Clean separation between API, Core, Data, Cache, and Shared layers
+- **Coroutines-first** -- Every network call is a `suspend` function; seamless integration with `Flow` for reactive streams
+- **Kotlin Multiplatform ready** -- Shared module enables code reuse across Android, iOS (via KMM), Desktop, and potentially WASM/JS targets
+- **Type-safe models** -- Kotlinx Serialization for zero-reflection JSON parsing
+- **Offline caching** -- Room-based cache module with configurable TTL strategies
+- **Dependency injection** -- First-class Koin/Hilt support out of the box
+
+## Key Features
+
+### 1. Easy Integration
+
+KurozoraKit uses a simple builder pattern for configuration:
+
+```kotlin
+val kurozoraKit = KurozoraKit.Builder()
+    .apiKey("your-api-key")
+    .platform(platformInfo)
+    .userAgent(UserAgent(appName = "your_app_name", appID = "com.username.kurozora", platformName = "your_platform_name", platformVersion = "your_platform_version"))
+    .logLevel(LogLevel.INFO)
+    .build()
+```
+
+### 2. Repository Pattern
+
+Access resources through dedicated repositories:
+
+```kotlin
+// Shows repository
+val shows = kurozoraKit.show()
+
+// Literature repository
+val literature = kurozoraKit.literature()
+
+// User repository
+val users = kurozoraKit.user()
+```
+
+### 3. Type-Safe Responses
+
+All responses are wrapped in a `Result<T>` type for safe error handling:
+
+```kotlin
+when (val result = kurozoraKit.show().getShow("1")) {
+    is Result.Success -> {
+        val show = result.data.data.first()
+        println(show.attributes.title)
+    }
+    is Result.Error -> {
+        handleError(result.error)
+    }
+}
+```
+
+### 4. Advanced Caching
+
+Built-in multi-tier caching with intelligent cache promotion:
+
+```kotlin
+val cacheManager = CacheManager(
+    caches = listOf(
+        InMemoryCache(config = cacheConfig),
+        FileBasedCache(cacheDir, config = cacheConfig)
+    )
+)
+
+val kurozoraKit = KurozoraKit.Builder()
+    .apiKey("your-api-key")
+    .platform(platformInfo)
+    .userAgent(UserAgent(appName = "your_app_name", appID = "com.username.kurozora", platformName = "your_platform_name", platformVersion = "your_platform_version"))
+    .cacheManager(cacheManager)
+    .build()
+
+// Data is automatically cached
+val result = kurozoraKit.show().getShows(limit = 20)
+```
+
+### 5. Comprehensive Filtering
+
+Powerful filtering system for search and discovery:
+
+```kotlin
+val filter = ShowFilter(
+    type = FilterValue(listOf(ShowType.TV)),
+    year = FilterValue(listOf("2024")),
+    season = FilterValue(listOf(SeasonOfYear.WINTER)),
+    status = FilterValue(listOf(ShowStatus.FINISHED))
+)
+
+val shows = kurozoraKit.show().getShows(filter = filter)
+```
+
+## Quick Example
+
+```kotlin
+// Initialize KurozoraKit
+val kurozoraKit = KurozoraKit.Builder()
+    .apiKey("your-api-key")
+    .platform(myPlatform)
+    .userAgent(userAgent)
+    .logLevel(LogLevel.INFO)
+    .cacheManager(cacheManager)
+    .build()
+
+// Fetch shows
+val result = kurozoraKit.show().getShows(limit = 20)
+
+result.onSuccess { response ->
+    response.data.forEach { show ->
+        println("${show.attributes.title}")
+    }
+}.onError { error ->
+    println("Error: ${error.message}")
+}
+```
+
+## Module Summary
+
+| Module | Artifact | Purpose |
+|--------|----------|---------|
+| `api` | `app.kurozora:api` | Retrofit/Ktor service definitions, request/response DTOs |
+| `core` | `app.kurozora:core` | Domain models, use cases, repository interfaces |
+| `data` | `app.kurozora:data` | Repository implementations, data source coordination |
+| `cache` | `app.kurozora:cache` | Room database, DAOs, offline-first caching layer |
+| `shared` | `app.kurozora:shared` | KMP entry point, platform-expect/actual declarations |
+
+## Requirements
+
+| Requirement | Minimum |
+|-------------|---------|
+| Kotlin | 1.9.0+ |
+| Android | API 24 (Android 7.0) |
+| Gradle | 8.0+ |
+| JDK | 17+ |
+| AGP | 8.1+ |
+
+## Dependencies
+
+KurozoraKit uses modern Android libraries:
+
+| Package | Purpose |
+|---------|---------|
+| [Ktor Client](https://i.dont.know) | HTTP client with coroutines support |
+| [Kotlinx Serialization](https://i.dont.know) | JSON serialization |
+| [Kotlinx DateTime](https://i.dont.know) | Date/time handling |
+| [Kotlin Coroutines](https://i.dont.know) | Async programming |
+
+## Repository
+
+- **GitHub:** [Kurozora/KurozoraKit](https://github.com/Kurozora/kurozorakit-android)
+- **License:** MIT
+<!-- - **Stars:** 21+
+- **Commits:** 25+ -->
+
+## API Reference
+
+::: tip Full Reference
+For complete class, method, and protocol documentation generated by Jazzy, see the [Full API Reference (Dokka)](/dokka-kotlin/index.html){target="_blank"}.
+:::
+
+## Next Steps
+
+- [Installation](/sdk-kotlin/installation) -- Add KurozoraKit to your project
+- [Configuration](/sdk-kotlin/configuration) -- Set up the client
