@@ -1,0 +1,42 @@
+{
+    "theme": {
+        "color": {
+            "fill": {
+                "light": "var(--vp-c-bg)",
+                "dark": "var(--vp-c-bg)"
+            },
+            "fill-secondary": {
+                "light": "var(--vp-c-bg-soft)",
+                "dark": "var(--vp-c-bg-soft)"
+            },
+            "figure-gray": {
+                "light": "var(--vp-c-text-1)",
+                "dark": "var(--vp-c-text-1)"
+            },
+            "link": {
+                "light": "var(--vp-c-brand-1)",
+                "dark": "var(--vp-c-brand-1)"
+            },
+            "focus-color": {
+                "light": "var(--vp-c-brand-1)",
+                "dark": "var(--vp-c-brand-1)"
+            },
+            "navigator-item-hover": {
+                "light": "var(--vp-c-brand-2)",
+                "dark": "var(--vp-c-brand-2)"
+            },
+            "figure-blue": {
+                "light": "var(--vp-c-brand-2)",
+                "dark": "var(--vp-c-brand-2)"
+            },
+            "fill-blue": {
+                "light": "var(--vp-c-brand-2)",
+                "dark": "var(--vp-c-brand-2)"
+            },
+            "fill-light-blue-secondary": {
+                "light": "var(--vp-c-brand-2)",
+                "dark": "var(--vp-c-brand-2)"
+            }
+        }
+    }
+}

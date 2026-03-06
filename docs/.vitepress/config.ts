@@ -13,6 +13,8 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://developer.kurozora.app' }],
   ],
 
+  cleanUrls: true,
+
   themeConfig: {
     logo: '/KurozoraKit.png',
     siteTitle: 'Kurozora Developer',
@@ -76,15 +78,14 @@ export default defineConfig({
             { text: 'Overview', link: '/sdk-swift/' },
             { text: 'Installation', link: '/sdk-swift/installation' },
             { text: 'Configuration', link: '/sdk-swift/configuration' },
-            { text: 'Authentication', link: '/sdk-swift/authentication' },
           ],
         },
         {
           text: 'Reference',
           items: [
             {
-              text: 'Full API Reference (Jazzy)',
-              link: '/jazzy-swift/index.html',
+              text: 'Full API Reference (DocC)',
+              link: '/sdk-swift/documentation',
               target: '_blank',
             },
           ],
@@ -116,7 +117,7 @@ export default defineConfig({
           items: [
             {
               text: 'Full API Reference (Dokka)',
-              link: '/dokka-kotlin/index.html',
+              link: '/dokka-kotlin/',
               target: '_blank',
             },
           ],
@@ -156,6 +157,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Kurozora' },
+      { icon: 'x', link: 'https://x.com/Kurozora' },
       { icon: 'discord', link: 'https://discord.gg/IijDhE6' },
     ],
 

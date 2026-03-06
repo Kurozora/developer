@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "npm run docs:patch-docc && vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:patch-docc": "node scripts/patch-docc.js"
   },
   "devDependencies": {
     "vitepress": "^1.6.3",

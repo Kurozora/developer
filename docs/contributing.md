@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome contributions to Kurozora and its SDKs. This guide covers the process for all repositories in the Kurozora organization.
+Contributions to Kurozora is always welcome! This guide covers the process for all repositories in the Kurozora organization.
 
 ## Getting Started
 
