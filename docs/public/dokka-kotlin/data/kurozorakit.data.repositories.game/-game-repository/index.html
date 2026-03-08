@@ -1,0 +1,280 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GameRepository</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            KurozoraKit SDK
+                    </a>            </div>
+            <div class="library-version">1.2.4
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":data:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="data::kurozorakit.data.repositories.game/GameRepository///PointingToDeclaration//-338065250">
+  <div class="breadcrumbs"><a href="../../index.html">data</a><span class="delimiter">/</span><a href="../index.html">kurozorakit.data.repositories.game</a><span class="delimiter">/</span><span class="current">GameRepository</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Game</span><wbr><span><span>Repository</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">GameRepository</a></div><p class="paragraph">Data repository responsible for managing and retrieving video game information.</p><p class="paragraph">This repository serves as the central hub for video game metadata, including release schedules, character rosters, production staff, and cross-media relationships (e.g., anime or manga adaptations of a game).</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-game-repository-ımpl/index.html">GameRepositoryImpl</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-603802091%2FFunctions%2F-338065250" anchor-label="getGame" id="-603802091%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game.html"><span>get</span><wbr><span><span>Game</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-603802091%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game.html"><span class="token function">getGame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">relationships<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList&lt;String&gt;()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.game/-game-response/index.html">GameResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetches detailed information for a specific game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2003076690%2FFunctions%2F-338065250" anchor-label="getGameCast" id="2003076690%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game-cast.html"><span>get</span><wbr><span>Game</span><wbr><span><span>Cast</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2003076690%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game-cast.html"><span class="token function">getGameCast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.show.cast/-cast-response/index.html">CastResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves the voice cast associated with a specific game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="983914429%2FFunctions%2F-338065250" anchor-label="getGameCharacters" id="983914429%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game-characters.html"><span>get</span><wbr><span>Game</span><wbr><span><span>Characters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="983914429%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game-characters.html"><span class="token function">getGameCharacters</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.character/-character-ıdentity-response/index.html">CharacterIdentityResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves the characters featured in a specific game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1144452812%2FFunctions%2F-338065250" anchor-label="getGameReviews" id="-1144452812%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game-reviews.html"><span>get</span><wbr><span>Game</span><wbr><span><span>Reviews</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1144452812%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game-reviews.html"><span class="token function">getGameReviews</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.review/-review-response/index.html">ReviewResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves user-written reviews for a specific game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="253565945%2FFunctions%2F-338065250" anchor-label="getGames" id="253565945%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-games.html"><span>get</span><wbr><span><span>Games</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="253565945%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-games.html"><span class="token function">getGames</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><a href="../../kurozorakit.data.models.search.filters/-game-filter/index.html">GameFilter</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.game/-game-ıdentity-response/index.html">GameIdentityResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves a paginated list of games, optionally filtered by specific criteria.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-918196039%2FFunctions%2F-338065250" anchor-label="getGameStaff" id="-918196039%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game-staff.html"><span>get</span><wbr><span>Game</span><wbr><span><span>Staff</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-918196039%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game-staff.html"><span class="token function">getGameStaff</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.staff/-staff-ıdentity-response/index.html">StaffIdentityResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetches the development staff and key personnel for a game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="304911990%2FFunctions%2F-338065250" anchor-label="getGameStudios" id="304911990%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-game-studios.html"><span>get</span><wbr><span>Game</span><wbr><span><span>Studios</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="304911990%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-game-studios.html"><span class="token function">getGameStudios</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.studio/-studio-response/index.html">StudioResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetches the game studios (developers/publishers) involved with the game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-962648573%2FFunctions%2F-338065250" anchor-label="getMoreByStudio" id="-962648573%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-more-by-studio.html"><span>get</span><wbr><span>More</span><wbr><span>By</span><wbr><span><span>Studio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-962648573%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-more-by-studio.html"><span class="token function">getMoreByStudio</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.game/-game-ıdentity-response/index.html">GameIdentityResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves other games developed or published by the same studios.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1872941015%2FFunctions%2F-338065250" anchor-label="getRelatedGames" id="1872941015%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-related-games.html"><span>get</span><wbr><span>Related</span><wbr><span><span>Games</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1872941015%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-games.html"><span class="token function">getRelatedGames</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.show.related/-related-game-response/index.html">RelatedGameResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves other games that are part of the same franchise or series.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-125659560%2FFunctions%2F-338065250" anchor-label="getRelatedLiteratures" id="-125659560%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-related-literatures.html"><span>get</span><wbr><span>Related</span><wbr><span><span>Literatures</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-125659560%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-literatures.html"><span class="token function">getRelatedLiteratures</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.show.related/-related-literature-response/index.html">RelatedLiteratureResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetches literature (Manga/Novels) related to or adapted from this game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="894564908%2FFunctions%2F-338065250" anchor-label="getRelatedShows" id="894564908%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-related-shows.html"><span>get</span><wbr><span>Related</span><wbr><span><span>Shows</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="894564908%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-related-shows.html"><span class="token function">getRelatedShows</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.show.related/-related-show-response/index.html">RelatedShowResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Fetches shows (Anime/TV) that are related to or adapted from this game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2011507829%2FFunctions%2F-338065250" anchor-label="getUpcomingGames" id="-2011507829%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-upcoming-games.html"><span>get</span><wbr><span>Upcoming</span><wbr><span><span>Games</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2011507829%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-upcoming-games.html"><span class="token function">getUpcomingGames</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">next<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-ınt/index.html">Int</a><span class="token operator"> = </span><span class="token constant">20</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../kurozorakit.data.models.game/-game-ıdentity-response/index.html">GameIdentityResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves a list of games scheduled for future release.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="892083845%2FFunctions%2F-338065250" anchor-label="rateGame" id="892083845%2FFunctions%2F-338065250" data-filterable-set=":data:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":data:dokkaHtmlPartial/main" data-filterable-set=":data:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rate-game.html"><span>rate</span><wbr><span><span>Game</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="892083845%2FFunctions%2F-338065250"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":data:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="rate-game.html"><span class="token function">rateGame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gameId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">rating<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">review<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../shared/kurozorakit.shared/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Submits or updates a user's rating and optional review for a game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
