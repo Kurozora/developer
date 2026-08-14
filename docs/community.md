@@ -21,7 +21,7 @@ All Kurozora source code and issue tracking lives on GitHub.
 Experience the platform directly:
 
 - [Web](https://kurozora.app){target="_blank"}
-- [iOS / macOS](https://apps.apple.com/app/kurozora/id1476070797){target="_blank"}
+- [iOS / macOS](https://apps.apple.com/app/kurozora/id1476153872){target="_blank"}
 - Android -- Coming soon
 
 ## Open Source
